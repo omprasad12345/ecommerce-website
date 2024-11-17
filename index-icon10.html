@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d0c9c0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .heading {
+            margin-top: 10%;
+        }
+
+        .part-1 {
+            margin-top: 4%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .form-container,
+        .info-container {
+            width: 100%;
+            margin-bottom: 20px;
+            
+        }
+    .info-container h2{
+        font-family: 'Algerian', serif;
+    }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            padding: 15px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .info-container {
+            text-align: center;
+        }
+
+        .info-container h2 {
+            margin-top: 2%;
+            font-size: 24px;
+        }
+
+        .info-container p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .contact-item img {
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            background-size: auto;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="heading"><b>
+                    <h1><u>Contact with us</u></h1>
+                </b></div>
+            <div class="part-1">
+                <div class="form-container">
+                    <form id="form">
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your comments..."></textarea>
+                        <center><input type="submit" id="button" value="Send Email" ></center>
+                    </form>
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+                    <script type="text/javascript">
+                        emailjs.init('EidImG3XnXmII7MZP')
+                    </script>
+                </div>
+                <hr>
+                <div class="info-container">
+                    <h2>!! The Crafty Marketplace !!</h2>
+                    <hr>
+                    <p>We are here to assist you. Feel free to reach out to us through any of the following methods.</p>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 6573927849</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>jenaomprasad480@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Santi Niketan, Ghangapatna, BBSR</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="contact10.js"></script>
+</body>
+
+
+
+</html>

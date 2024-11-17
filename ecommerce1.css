@@ -1,0 +1,282 @@
+/* full image in the profile */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('back.jpg') no-repeat center center fixed ; /* Add your background image */
+    background-size: cover; /* Cover the whole page */
+    position: relative;
+}
+/* for transparency */
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(12, 12, 12, 0.612); /* White overlay with 50% transparency */
+    z-index: -1; /* Ensure it stays behind content */
+    height: 130%;
+   
+    
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    color:white;
+}
+
+/* navbar section */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    color: rgb(248, 250, 250);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 20px;
+    
+   
+ }
+ .navbar a:hover {
+     background-color: #ddd; 
+     color: rgb(18, 176, 203);
+      border-radius:5px ; 
+    }
+ /* search container */
+#search-container {
+    margin: 30px auto;
+    display: flex;
+    justify-content: right;
+}
+input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 30px 0 0 30px;
+}
+button {
+    padding: 11px;
+    background-color:#3292a3;
+    color: white;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+button:hover {
+    background-color:  rgb(16, 126, 143);
+}
+
+
+
+
+/* home section */
+#home{
+    margin: 30px auto;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  
+
+}
+.heading {
+  font-size: 50px;
+  font-family: 'Algerian', serif;
+}
+.crafty {  
+  color: white;
+}
+.marketplace {
+   color: blue;
+ }
+
+
+.logo img{
+  width: 70%;
+  height: 70%;
+
+
+  
+  
+
+  
+}
+.home-section a{
+  text-decoration:none;
+  color: #f0f0f0;
+  
+}
+.home-section button{
+    padding: 11px;
+    background-color:#218087;
+    color: white;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    
+
+}
+button:hover{
+    background-color: rgb(49, 98, 122);
+}
+/* Popular product */
+#latest-product{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 60px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping of items on smaller screens */
+}
+.outfit p{
+  
+  font-size: 50px;
+  font-family: 'Algerian', serif;
+
+}
+.item {
+    text-align: center;
+}
+
+
+.item img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ccc; /* Optional: Adds a border around images */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    height: 250px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+footer {
+    background-color: #151515;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family:cursive;
+  }
+  
+  .footer-content p {
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .footer-content .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .footer-content .socials li {
+    margin: 0 10px;
+  }
+  
+  .footer-content .socials a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content .socials a:hover {
+    color: #ff6347;
+  }
+  
+  .footer-bottom {
+    background-color: #9e9e9e;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #000 ;
+  }
+  
+  .socials img {
+     width: 45px; 
+    border-radius: 50%;
+    transition: transform 0.3s ease
+    
+  }
+  
+  
+  .socials img:hover {
+    transform: scale(1.08);
+  }
+  
+  .scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #076e80 transparent;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ff5733;
+    border-radius: 10px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+ 
+ 
+  
+ 

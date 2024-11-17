@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:aqua;
+    
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 200px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 30px;
+    
+    
+}
+
+.notification button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    
+    
+
+}
+
+.notification button:hover {
+    background-color: #e7e7e7;
+}
+
+.hide {
+    display: none;
+}
+
+#markAsDeliveredBtn {
+    padding: 26px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+   
+    
+    
+}
+
+
+
+
